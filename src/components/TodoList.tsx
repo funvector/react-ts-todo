@@ -1,10 +1,10 @@
 import React from 'react'
 import { ITodo } from '../interfaces'
 
-type TodoListProps = {
+interface TodoListProps {
   todos: ITodo[]
   onToggle(id: number): void
-  onRemove: (id: number) => void
+  onRemove(id: number): void
 }
 
 export const TodoList: React.FC<TodoListProps> = ({
